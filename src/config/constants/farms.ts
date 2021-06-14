@@ -4,19 +4,18 @@ import { FarmConfig, QuoteToken } from './types'
 const farms: FarmConfig[] = [
   {
     pid: 0,
-    isTokenOnly: true,
-    lpSymbol: 'GOLD',
+     lpSymbol: 'XYZ-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xb50539EAC8971052a96A2E466C6865b942835C56', // GOLD-BUSD LP
+      56: '0x335a12850ed615cff00e16a21a74a66c99cc56d0', // rpsrs-bnb lp
     },
-    tokenSymbol: 'GOLD',
+    tokenSymbol: 'XYZ',
     tokenAddresses: {
       97: '',
-      56: '0x8298fea38aa8627316ffd943fe001b69cac8174d',
+      56: '0xa93659490d4e73365B4d66c014A2704a60106Bd2',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
   {
     pid: 1,
